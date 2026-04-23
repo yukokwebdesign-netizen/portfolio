@@ -501,7 +501,7 @@ footer {
     background-image: url("../img/mainvisual-sp.png");
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 60vh;
     padding: 20px;
 }
 
@@ -564,6 +564,11 @@ footer {
 
    .profile-photo {
     order: 1; 
+  }
+
+  .flower-item {
+    height: 120px;
+    transform: translateX(0);
   }
 
 
