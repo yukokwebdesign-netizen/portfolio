@@ -556,6 +556,7 @@ footer {
   .profile-content {
     text-align: center;
     order: 2;
+    padding: 0px 20px;
   }
 
   .profile-content p {
@@ -566,8 +567,12 @@ footer {
     order: 1; 
   }
 
+  .profile-card {
+    margin:  0;
+  }
+
   .flower-item {
-    height: 120px;
+    height: 150px;
     transform: translateX(0);
   }
 
