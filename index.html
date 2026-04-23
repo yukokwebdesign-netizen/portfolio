@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+  <h1 class="logo">Yuko Kishimoto</h1>
+
+  <nav>
+    <ul class="nav">
+      <li class="menu-item"><a href="#about">About</a></li>
+      <li class="menu-item"><a href="#skills">Skills</a></li>
+      <li class="menu-item"><a href="#works">Works</a></li>
+      <li class="menu-item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="menu">
+    <ul class="menu-list">
+      <li class="menu-item"><a href="#about">About</a></li>
+      <li class="menu-item"><a href="#skills">Skills</a></li>
+      <li class="menu-item"><a href="#works">Works</a></li>
+      <li class="menu-item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="profile-card">
+      <div class="profile-content">
+        <h2>About</h2>
+        <p class="name">Yuko Kishimoto</p>
+        <p>
+        お客様のご要望を丁寧に汲み取り、<br>
+        目的に沿ったWebサイトを形にすることを大切にしています。<br>
+        WordPress（Elementor）やHTML/CSS・JavaScriptを用い、<br>
+        デザインから実装まで一貫して対応しています。<br><br>
+
+        見た目の美しさだけでなく、「使いやすさ」や「伝わりやすさ」を意識し、<br>
+        ユーザーにとって分かりやすいUI設計を心がけています。<br><br>
+
+        一つひとつの制作に責任を持ち、<br>
+        お客様の想いを形にできるWeb制作を行っていきます。
+        </p>
+        <img class="flower-item" src="img/flower-item.svg">
+      </div>
+      <div class="profile-photo">
+        <img class="light-item" src="img/light-item.svg">
+        <img class="profile-img" src="img/profile.png" alt="プロフィール写真">
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skill">
+      <div class="cards">
+        <div class="card">
+         <div class="card-img">
+            <img src="img/skill-card2.png" alt="">
+          </div>
+          <div class="card-body">
+            <h3>HTML/CSS/JavaScript</h3>
+            <p>Webサイトの構造設計から動きのある表現まで対応し、ユーザーに伝わるWebページを構築します。</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="img/skill-card1.png" alt="">
+          </div>
+          <div class="card-body">
+            <h3>WordPress</h3>
+            <p>WordPress/Elementor/JetEngineを活用し、更新性・拡張性の高いWebサイトや動的なコンテンツ設計を行います。</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="img/skill-card3.png" alt="">
+          </div>
+          <div class="card-body">
+            <h3>Illustrator/Photoshop</h3>
+            <p>IllustratorやPhotoshopを用いて、Webサイトや印刷物に対応した視認性の高いデザイン素材を制作します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="section">
+    <h2>Works</h2>
+    <img class="light-point" src="img/light-point-item.svg">
+
+    <div class="work-tab">
+      <div class="work-btns">
+        <button class="work-btn active" data-target="target1">
+        よつばマッサージ様
+        </button>
+        <button class="work-btn" data-target="target2">
+        TiroMusic様
+        </button>
+      </div>
+
+      <div class="work-cards">
+        <div id="target1" class="work-card active">
+          <div class="port-scroll">
+            <img src="img/yotsuba-scroll.png">
+          </div>
+          <div class="work-content">
+            <h3>クライアント様</h3>
+            <p>よつばマッサージ様</p>
+            <h3>担当範囲</h3>
+            <p>・デザイン制作<br>
+            ・WordPress（Elementor）による<br>
+            サイト構築・実装<br>
+            ・必要に応じてHTML/ CSS /<br>
+            JavaScriptによる部分的な<br>
+            コーディング対応</p>
+          </div>
+        </div>
+
+        <div id="target2" class="work-card">
+          <div class="port-scroll">
+            <img src="img/tiro-scroll.png">
+          </div>
+          <div class="work-content">
+            <h3>クライアント様</h3>
+            <p>TiroMusic様</p>
+            <h3>担当範囲</h3>
+            <p>・デザイン制作<br>
+            ・WordPress（Elementor）による<br>
+            サイト構築・実装<br>
+            ・必要に応じてHTML/ CSS /<br>
+            JavaScriptによる部分的な<br>
+            コーディング対応</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form class="contact-form" action="#" method="post">
+      <div class="form-item">
+        <label for="name">お名前 <span class="form-red">＊</span></label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-item">
+        <label for="email">メールアドレス <span class="form-red">＊</span></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-item">
+        <label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="message" rows="6"></textarea>
+      </div>
+    <button type="submit" class="submit-btn">送信する</button>
+    <p class="form-note">※現在はポートフォリオのため送信機能は停止しています。</p>
+
+  </form>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; Yuko Kishimoto</p>
+</footer>
+<button id="toTop" class="to-top">↑</button>
+</body>
+</html>
