@@ -67,9 +67,10 @@ button:hover {
 
 /* ハンバーガーボタン */
 .menu-btn {
-    position: static;
+    position: relative;
     height: 24px;
     width: 30px;
+    margin-left: auto;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -78,22 +79,41 @@ button:hover {
 
 .menu-btn span {
     display: block;
+
+    position: absolute;
+    left: 0;
+    width: 100%;
     height: 3px;
     background: #fff;
     transition: 0.3s;
 }
 
 /* ×変形 */
+.menu-btn span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu-btn span:nth-of-type(2) {
+  top: 10px;
+}
+
+.menu-btn span:nth-of-type(3) {
+  top: 20px;
+}
+
+/* open時 */
 .menu-btn.open span:nth-of-type(1) {
-    transform: translateY(10px) rotate(45deg);
+  top: 10px;
+  transform: rotate(45deg);
 }
 
 .menu-btn.open span:nth-of-type(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .menu-btn.open span:nth-of-type(3) {
-    transform: translateY(-10px) rotate(-45deg);
+  top: 10px;
+  transform: rotate(-45deg);
 }
 
 /* メニュー本体 */
@@ -511,14 +531,13 @@ footer {
 
   .menu-btn {
     display: flex;
-    left: auto;
-    right: 20px;
-  }
+    margin-left: auto;
+}
 
   .menu {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 100%;
     right: 0;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
